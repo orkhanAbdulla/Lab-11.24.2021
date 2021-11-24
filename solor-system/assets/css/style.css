@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.solar-system-container{
+    background-image: url("https://wallpaperaccess.com/full/1314202.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+.galaxy-item{
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.galaxy-item-sun{
+    width: 80px;
+    height: 80px;
+    background:radial-gradient(orangered,yellow);
+    box-shadow: 0 0 20px 0 yellow;
+}
+.galaxy-item-mercury{
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(#E55F02,#F97E29);
+    animation-name: mercury;
+    animation-duration: 16s;
+    margin: -10px;
+}
+.galaxy-item-mars{
+    width: 22px;
+    height: 22px;
+    background: radial-gradient(#AF2604,#F7481C);
+    animation-name: mars;
+    animation-duration: 11s;
+    margin: -11px;
+}
+.galaxy-item-venus{
+    width: 24px;
+    height: 24px;
+    background: radial-gradient(#C8B279,#E1D9C6);
+    animation-name: venus;
+    animation-duration: 4s;
+    margin: -12px;
+}
+.galaxy-item-earth{
+    width: 27px;
+    height: 27px;
+    background: radial-gradient(#0398E5,#75CCF9);
+    animation-name: earth;
+    animation-duration: 10s;
+    margin: -13px;
+}
+.galaxy-item-neptun{
+    width: 35px;
+    height: 35px;
+    background: radial-gradient(#035E8D,#0A85C4);
+    animation-name: neptun;
+    animation-duration: 5s;
+    margin: -17px;
+}
+.galaxy-item-uranus{
+    width: 38px;
+    height: 38px;
+    background: radial-gradient(#C9D9E1,#DBE6EC);
+    animation-name: uranus;
+    animation-duration: 11s;
+    margin: -19px;
+}
+.galaxy-item-saturn{
+    width: 42px;
+    height: 42px;
+    background: radial-gradient(#F6C56B,#E3DDD1);
+    animation-name: saturn;
+    animation-duration: 9s;
+    margin: -21px;
+  
+}
+.galaxy-item-saturn::after{
+    content: "";
+    position: absolute;
+    top: 40%;
+    left:-3px;
+    width: 50px;
+    height: 11px;
+    border: 3px solid beige;
+    border-radius: 50%;
+    border-top-color:transparent;
+}
+.galaxy-item-yupiter{
+    width: 45px;
+    height: 45px;
+    background: radial-gradient(#F77610,#F79140);
+    animation-name: yupiter;
+    animation-duration: 7s;
+}
+@keyframes mercury{
+    from{
+        transform: rotate(0) translateY(60px);
+    }to{
+        transform: rotate(360deg) translateY(60px);
+    }
+    
+}
+@keyframes venus {
+    from{
+        transform: rotate(0) translateY(100px);
+    }to{
+        transform: rotate(360deg) translateY(100px);
+    }
+    
+}
+@keyframes earth {
+    from{
+        transform: rotate(0) translateY(120px);
+    }to{
+        transform: rotate(360deg) translateY(120px);
+    }
+    
+}
+@keyframes mars {
+    from{
+        transform: rotate(0) translateY(150px);
+    }to{
+        transform: rotate(360deg) translateY(150px);
+    }
+    
+}
+@keyframes yupiter {
+    from{
+        transform: rotate(0) translateY(200px);
+    }to{
+        transform: rotate(360deg) translateY(200px);
+    }
+    
+}
+@keyframes saturn {
+    from{
+        transform: rotate(0) translateY(250px);
+    }to{
+        transform: rotate(360deg) translateY(250px);
+    }
+    
+}
+@keyframes uranus {
+    from{
+        transform: rotate(0) translateY(300px);
+    }to{
+        transform: rotate(360deg) translateY(300px);
+    }
+    
+}
+@keyframes neptun {
+    from{
+        transform: rotate(0) translateY(350px);
+    }to{
+        transform: rotate(360deg) translateY(350px);
+    }
+    
+}
